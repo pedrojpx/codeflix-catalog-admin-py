@@ -26,4 +26,4 @@ class CreateCategoryUseCase:
             raise InvalidCategoryData(err)
         
         self.repository.save(c)
-        return c.id
+        return CreateCategoryResponse(id=c.id)
