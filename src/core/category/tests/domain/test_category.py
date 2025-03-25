@@ -1,5 +1,5 @@
 import pytest
-from category import Category
+from src.core.category.domain.category import Category
 from uuid import UUID
 import uuid
 
