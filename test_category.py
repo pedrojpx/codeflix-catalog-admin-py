@@ -1,6 +1,6 @@
 import pytest
-
 from category import Category
+from uuid import UUID
 import uuid
 
 class TestCategory():
@@ -27,7 +27,7 @@ class TestCategory():
         assert c.is_active is True
 
     def test_created_category_with_provided_values(self):
-        c = Category("filme", "id", "description", False)
+        c = Category("filme", "description", False, "id")
         assert c.id == "id"
         assert c.name == "filme"
         assert c.description == "description"
