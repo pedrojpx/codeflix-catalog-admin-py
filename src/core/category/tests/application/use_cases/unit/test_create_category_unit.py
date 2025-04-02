@@ -4,8 +4,8 @@ from uuid import UUID
 import pytest
 
 from src.core.category.application.category_repository import CategoryRepository
-from src.core.category.application.create_category import CreateCategoryRequest, CreateCategoryUseCase, InvalidCategoryData
-from src.core.category.application.exceptions import InvalidCategoryData
+from src.core.category.application.use_cases.create_category import CreateCategoryRequest, CreateCategoryUseCase, InvalidCategoryData
+from src.core.category.application.use_cases.exceptions import InvalidCategoryData
 
 class TestCreateCategory:
     def test_create_w_valid_data(self):
